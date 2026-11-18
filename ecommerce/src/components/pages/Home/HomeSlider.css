@@ -1,0 +1,29 @@
+.home-slide {
+    width: 91%;
+    margin: 30px auto;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 400px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-wrapper {
+    border-radius: 30px;
+}
+
+.mySwiper .swiper-slide {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.mySwiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

@@ -1,0 +1,21 @@
+.catslide {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    width: 25px;
+    height: 25px;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+    font-size: 14px;
+}
