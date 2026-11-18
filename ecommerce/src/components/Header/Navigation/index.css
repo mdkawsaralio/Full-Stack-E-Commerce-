@@ -1,0 +1,100 @@
+.navigation {
+    padding: .5rem 3.5%;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.left-navigation button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.left-navigation :active {
+    transform: scale(0.95);
+}
+
+.button-arrow {
+    margin-left: 5px;
+}
+
+.middle-navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.manu-list {
+    position: relative;
+}
+
+.manu-list>a {
+    display: block;
+
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.manu-list:hover>a {
+    color: #e53935;
+}
+
+/* Dropdown */
+.dropdown-manu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 190px;
+    margin: 0;
+    padding: 8px 0;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+
+    /* hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.2s ease;
+}
+
+.manu-list:hover .dropdown-manu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-manu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-manu li a:hover {
+    background: #f7f7f7;
+    color: #e53935;
+}
+
+
+.left-navigation {
+    position: relative;
+    display: inline-block;
+}
