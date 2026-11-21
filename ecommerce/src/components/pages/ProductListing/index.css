@@ -1,0 +1,14 @@
+.bread-crumbs {
+    padding: 10px;
+}
+
+.product-listing {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 90%;
+    margin: 20px auto;
+    align-items: flex-start;
+    box-sizing: border-box;
+
+}

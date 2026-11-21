@@ -1,0 +1,94 @@
+.popular-section {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.popular-heading {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.popular-heading h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.popular-section-cat {
+    width: 60%;
+}
+
+
+
+.popular-section-cat {
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-list {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    flex-direction: row !important;
+}
+
+.category-list button {
+    flex-shrink: 0;
+    padding: 8px 15px;
+    border: none;
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.more-btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.popular-section-cat:hover .more-btn {
+    display: block;
+}
+
+
+.left-right-btn {
+    padding: 8px;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.cat-name {
+    text-transform: capitalize;
+}
+
+.left-arrow,
+.right-arrow {
+    transition: all .4s ease;
+}
+
+.left-arrow :hover,
+.right-arrow:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+
+.popular-item-list {
+    width: 90%;
+    margin: 0 auto;
+
+}

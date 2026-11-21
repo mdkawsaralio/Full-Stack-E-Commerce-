@@ -1,0 +1,133 @@
+.product-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.grid-icon {
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.grid-icon.selected {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-icon {
+    border: 1px solid rgba(212, 47, 47, 0.178);
+    padding: 3px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.925);
+
+}
+
+.sort-option-btn {
+    border: 1px solid rgb(163, 162, 162);
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 5px;
+    background-color: white;
+
+}
+
+.sort-option-btn option {
+    font-size: 14px;
+
+
+}
+
+.sort-option-btn option:checked {
+    background-color: transparent;
+    color: red;
+
+}
+
+
+.sort-option-btn:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+.grid-option-sort {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.grid-option {
+    width: 97%;
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: rgba(220, 220, 220, 0.468);
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 30px;
+    transition: all .3s ease;
+
+}
+
+.product-grid-item {
+    transition: all .3s ease;
+}
+
+
+.product-grid-item:hover {
+    transform: translateY(-3px);
+}
+
+.product-grid-item:active {
+    transform: translateY(-1px);
+}
+
+.grid-option-icon {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.grid-option-description {
+
+    color: rgb(0, 0, 0);
+
+}
+
+.grid-option-sort {
+    padding-right: 20px;
+}
+
+
+
+.product-list-orientation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

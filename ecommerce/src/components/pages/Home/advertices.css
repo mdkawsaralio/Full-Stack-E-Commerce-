@@ -44,7 +44,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     height: 150px;
     gap: 20px;
 
@@ -53,8 +53,8 @@
 
 .advartice-image {
     cursor: pointer;
-    height: 250px;
-    width: 350px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .advartice-image img {

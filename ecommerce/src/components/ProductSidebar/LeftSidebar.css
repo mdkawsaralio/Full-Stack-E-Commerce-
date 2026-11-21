@@ -1,0 +1,160 @@
+.left-side-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 350px;
+}
+
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.box {
+    border: 1px solid rgba(255, 0, 0, 0.119);
+    padding: 20px;
+}
+
+.category-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.toggle-btn {
+
+    width: 10px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.toggle-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.subcategory-list {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+.checkbox-item input {
+    margin: 0;
+    accent-color: red;
+}
+
+.checkbox-item label {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.box a,
+.box li a {
+    display: inline-block;
+    transition: all .4s ease;
+}
+
+
+
+.box a:hover,
+.subcategory-list a:hover {
+    color: red;
+    cursor: pointer;
+    transform: translateX(3px);
+}
+
+
+
+
+.box a:focus,
+.subcategory-list a:focus {
+    transform: translateX(1px);
+}
+
+.range-slider {
+    margin-top: 20px;
+}
+
+
+.range-slider {
+    height: 6px !important;
+    background: #e5e7eb !important;
+    border-radius: 10px;
+}
+
+
+.range-slider {
+    height: 6px !important;
+    background: #e5e5e5 !important;
+    border-radius: 10px;
+}
+
+
+.range-slider__range {
+    background: #e53935 !important;
+    border-radius: 10px;
+}
+
+.range-slider__thumb {
+    width: 17px !important;
+    height: 17px !important;
+    background: #fff !important;
+    border: 3px solid #e53935 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 5px rgba(229, 57, 53, 0.25);
+    cursor: grab;
+}
+
+
+.range-slider__thumb:hover {
+    box-shadow: 0 0 0 4px rgba(229, 57, 53, 0.15);
+}
+
+
+.range-slider__thumb:active {
+    cursor: grabbing;
+}
+
+.range-limit {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}

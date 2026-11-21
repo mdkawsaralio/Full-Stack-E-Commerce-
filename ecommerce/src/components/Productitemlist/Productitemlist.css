@@ -1,0 +1,209 @@
+.shop-list-card {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+/* Image */
+.shop-list-image {
+    width: 230px;
+    height: 250px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.shop-list-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+/* Discount */
+.shop-list-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Hover Actions */
+.shop-list-actions {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.shop-list-image:hover .shop-list-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.shop-list-action-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.shop-list-action-btn:hover {
+    background: red;
+    color: white;
+    border-color: red;
+}
+
+/* Product Information */
+.shop-list-info {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.shop-list-company {
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+    margin-top: 2px;
+
+}
+
+.shop-list-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.shop-list-title a {
+    color: #222;
+    text-decoration: none;
+}
+
+.shop-list-title a:hover {
+    color: red;
+}
+
+/* Rating */
+.shop-list-rating .MuiRating-root {
+    margin: 2px !important;
+    color: #f5a623;
+    font-size: 18px;
+}
+
+/* Price */
+.shop-list-price {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 12px 0;
+    margin-top: 2px;
+}
+
+.shop-list-old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.shop-list-new-price {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Description */
+.shop-list-description {
+    margin-top: 5px !important;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Color Options */
+.shop-list-colors {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.shop-list-color {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.shop-list-color.black {
+    background: #222;
+}
+
+.shop-list-color.white {
+    background: white;
+}
+
+.shop-list-color.red {
+    background: red;
+}
+
+/* Bottom Section */
+.shop-list-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.shop-list-stock {
+    color: #07943d;
+    font-size: 13px;
+}
+
+.shop-list-options-btn {
+    padding: 9px 22px;
+    border: none;
+    border-radius: 5px;
+    background: #07943d;
+    color: white;
+    cursor: pointer;
+}
+
+.shop-list-options-btn:hover {
+    background: #074f23;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .shop-list-card {
+        flex-direction: column;
+    }
+
+    .shop-list-image {
+        width: 100%;
+        height: 250px;
+    }
+}
