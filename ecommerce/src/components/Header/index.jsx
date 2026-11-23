@@ -8,67 +8,72 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { IoIosGitCompare } from "react-icons/io";
 
 import Navigation from "./Navigation";
+import CartDrawer from "../Cart/CartDrawer/CartDrawer";
 
 const Header = () => {
+  const [open, setopen] = React.useState(false);
   return (
-    <header className="header-section">
-      <div className="container">
-        <div className="top-bar">
-          <div className="left-top-bar">
-            <p> Upto 50% discount</p>
-          </div>
-          <div className="right-top-bar">
-            <Link to="/"> Help Center </Link>
-            <Link to="/"> Order Tracking </Link>
-          </div>
-        </div>
-      </div>
-      <div className="header">
-        <div className="left-header">
-          <div className="logo-icon">
-            <Link to="/">
-              <img src={logo} alt="ClassyShop Logo" className="logo" />
-            </Link>
+    <>
+      <header className="header-section">
+        <div className="container">
+          <div className="top-bar">
+            <div className="left-top-bar">
+              <p> Upto 50% discount</p>
+            </div>
+            <div className="right-top-bar">
+              <Link to="/"> Help Center </Link>
+              <Link to="/"> Order Tracking </Link>
+            </div>
           </div>
         </div>
-
-        {/* Middle Header - Search */}
-        <div className="middle-header">
-          <input type="text" placeholder="Search products here..." />
-          <button type="button">SEARCH</button>
-        </div>
-
-        {/* Right Header - Account and Icons */}
-        <div className="right-header">
-          <div className="login-register">
-            <Link to="/login">Login</Link>
-            <span>/</span>
-            <Link to="/registration">Register</Link>
+        <div className="header">
+          <div className="left-header">
+            <div className="logo-icon">
+              <Link to="/">
+                <img src={logo} alt="ClassyShop Logo" className="logo" />
+              </Link>
+            </div>
           </div>
 
-          <div className="header-icons">
-            <IconButton aria-label="show 4 unread messages">
-              <Badge badgeContent={4} color="error">
-                <IoIosGitCompare />
-              </Badge>
-            </IconButton>
+          {/* Middle Header - Search */}
+          <div className="middle-header">
+            <input type="text" placeholder="Search products here..." />
+            <button type="button">SEARCH</button>
+          </div>
 
-            <IconButton aria-label="show 4 unread messages">
-              <Badge badgeContent={4} color="error">
-                <MdFavoriteBorder />
-              </Badge>
-            </IconButton>
+          {/* Right Header - Account and Icons */}
+          <div className="right-header">
+            <div className="login-register">
+              <Link to="/login">Login</Link>
+              <span>/</span>
+              <Link to="/registration">Register</Link>
+            </div>
 
-            <IconButton aria-label="show 4 unread messages">
-              <Badge badgeContent={4} color="error">
-                <MdOutlineShoppingCart />
-              </Badge>
-            </IconButton>
+            <div className="header-icons">
+              <IconButton aria-label="show 4 unread messages">
+                <Badge badgeContent={4} color="error">
+                  <IoIosGitCompare />
+                </Badge>
+              </IconButton>
+
+              <IconButton aria-label="show 4 unread messages">
+                <Badge badgeContent={4} color="error">
+                  <MdFavoriteBorder />
+                </Badge>
+              </IconButton>
+
+              <IconButton onClick={() => setopen(true)}>
+                <Badge badgeContent={4} color="error">
+                  <MdOutlineShoppingCart />
+                </Badge>
+              </IconButton>
+            </div>
           </div>
         </div>
-      </div>
-      <Navigation />
-    </header>
+        <Navigation />
+      </header>
+      <CartDrawer open={open} close={() => setopen(false)} />
+    </>
   );
 };
 
