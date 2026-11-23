@@ -1,0 +1,192 @@
+.login-page {
+    width: 90%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 5rem auto;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.146);
+
+}
+
+.login-left-side {
+    flex: 1;
+    background-color: red;
+    min-width: 0;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+
+}
+
+.login-page-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-page-title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.login-page-title p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.login-page-title span {
+    font-size: 10px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+
+    gap: 10px;
+}
+
+
+.login-form label {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+
+
+.login-checkbox {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+    margin-top: 10px;
+}
+
+.login-email,
+.login-password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 5rem;
+}
+
+.login-checkbox-input {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-checkbox input {
+    accent-color: red;
+}
+
+.login-checkbox-input label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.login-input {
+    border: none;
+    background-color: rgba(230, 226, 226, 0.685);
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+
+.login-btn {
+
+    width: 150px;
+    height: 45px;
+
+    margin: 20px auto;
+
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.login-btn:hover {
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}
+
+.login-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.login-register a {
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper .login-input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-eye {
+    position: absolute;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+.password-eye:hover {
+    color: red;
+}

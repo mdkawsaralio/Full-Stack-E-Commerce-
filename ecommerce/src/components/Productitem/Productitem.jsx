@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
 import { Link } from "react-router-dom";
@@ -9,7 +9,9 @@ import {
   FaExternalLinkAlt,
 } from "react-icons/fa";
 import "./Productitem.css";
+import { MyContext } from "../../App";
 function Productitem() {
+  const context = useContext(MyContext);
   return (
     <div className="shop-product-card">
       <div className="shop-product-image">
@@ -29,7 +31,10 @@ function Productitem() {
             <FaExchangeAlt />
           </button>
 
-          <button className="shop-product-action-btn">
+          <button
+            className="shop-product-action-btn"
+            onClick={() => context.setOpenProductDetailsModal(true)}
+          >
             <FaExpand />
           </button>
 

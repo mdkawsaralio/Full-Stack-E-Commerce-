@@ -11,7 +11,7 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <header>
+    <header className="header-section">
       <div className="container">
         <div className="top-bar">
           <div className="left-top-bar">
@@ -41,9 +41,9 @@ const Header = () => {
         {/* Right Header - Account and Icons */}
         <div className="right-header">
           <div className="login-register">
-            <Link to="/">Login</Link>
+            <Link to="/login">Login</Link>
             <span>/</span>
-            <Link to="/">Register</Link>
+            <Link to="/registration">Register</Link>
           </div>
 
           <div className="header-icons">

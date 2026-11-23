@@ -1,0 +1,32 @@
+.product-details-full {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.product-details-descriptions {
+    margin-top: 30px;
+}
+
+.related-product h3 {
+    margin-bottom: 20px;
+}
+
+.related-product {
+
+    margin: 5rem 0;
+    overflow: hidden;
+
+
+}
+
+.related-product .slide {
+    height: auto;
+}
+
+.feature-item-slide {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
