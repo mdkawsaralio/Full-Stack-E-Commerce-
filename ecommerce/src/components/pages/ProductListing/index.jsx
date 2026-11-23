@@ -5,15 +5,10 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info("You clicked a breadcrumb.");
-}
-
 function ProduceListing() {
   return (
     <>
-      <div role="presentation" onClick={handleClick} className="bread-crumbs">
+      <div role="presentation" className="bread-crumbs">
         <Breadcrumbs aria-label="breadcrumb">
           <Link to="/">Home</Link>
           <Link to="/product-listing">Product List</Link>

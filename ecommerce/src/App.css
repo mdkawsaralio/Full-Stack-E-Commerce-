@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+.product-details-modal .MuiDialog-paper {
+    width: 85%;
+    max-width: 85%;
+    max-height: 93vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.product-details-modal .MuiDialogContent-root {
+    padding: 15px;
+    position: relative;
+}
+
+
+.product-details-modal-close-icon {
+    position: absolute;
+    left: auto;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
