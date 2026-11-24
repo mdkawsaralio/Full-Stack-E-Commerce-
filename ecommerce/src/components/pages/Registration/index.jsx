@@ -3,11 +3,18 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import { IoEye, IoEyeOffSharp } from "react-icons/io5";
 import { useState } from "react";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
 
 function Registration() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <>
+      <div role="presentation" className="bread-crumbs">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link to="/">Home</Link>
+          <Link to="/product-listing">Registration</Link>
+        </Breadcrumbs>
+      </div>
       <div className="registration-page">
         {/* Left Side */}
         <div className="registration-left-side">

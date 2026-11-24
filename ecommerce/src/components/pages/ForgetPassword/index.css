@@ -1,0 +1,14 @@
+/* Forget Password Page */
+
+.login-form .login-btn {
+    width: 200px;
+    font-size: 16px;
+}
+
+.login-form .login-register {
+    margin-top: 10px;
+}
+
+.login-left-side {
+    background-color: red;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./CartDrawer.css";
 import { MdDeleteOutline } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function CartDrawer({ open, close }) {
   return (
@@ -65,8 +66,9 @@ function CartDrawer({ open, close }) {
 
             {/* Cart Buttons */}
             <div className="cart-actions">
-              <button>VIEW CART</button>
-              <button>CHECKOUT</button>
+              <Link to="/cart-items">VIEW CART</Link>
+
+              <Link to="/checkout">PROCEED TO CHECKOUT</Link>
             </div>
           </div>
         </div>

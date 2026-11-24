@@ -16,6 +16,14 @@ import ProductDetailsItem from "./components/ProductDetailsItem/ProductDetailsIt
 import { IoIosClose } from "react-icons/io";
 import Login from "./components/pages/Login";
 import Registration from "./components/pages/Registration";
+import CartPage from "./components/pages/Cartitem";
+import ForgetPassword from "./components/pages/ForgetPassword";
+import VerifyOTP from "./components/RecoverPassword/OtpVarify";
+import ResetPassword from "./components/RecoverPassword/RecoverPassword";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Checkout from "./components/pages/CheckOut";
 
 const MyContext = createContext();
 
@@ -40,6 +48,18 @@ function App() {
           <Route path={"/Product-details/:id"} element={<Productdetails />} />
           <Route path={"/login"} element={<Login />} />
           <Route path={"/registration"} element={<Registration />} />
+          <Route path={"/cart-items"} element={<CartPage />} />
+          <Route path={"/password-recovary"} element={<ForgetPassword />} />
+
+          <Route path={"/checkout"} element={<Checkout />} />
+          <Route
+            path={"/password-recovary/otp-verify"}
+            element={<VerifyOTP />}
+          />
+          <Route
+            path={"/password-recovary/reset-password"}
+            element={<ResetPassword />}
+          />
         </Routes>
         <Footer />
       </MyContext.Provider>
@@ -66,6 +86,15 @@ function App() {
           </div>
         </DialogContent>
       </Dialog>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        theme="light"
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+      />
     </>
   );
 }

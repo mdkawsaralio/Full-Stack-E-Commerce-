@@ -3,11 +3,18 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import { IoEye, IoEyeOffSharp } from "react-icons/io5";
 import { useState } from "react";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <>
+      <div role="presentation" className="bread-crumbs">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link to="/">Home</Link>
+          <Link to="/product-listing">Login</Link>
+        </Breadcrumbs>
+      </div>
       <div className="login-page">
         <div className="login-left-side">
           <div className="login-page-title">
@@ -58,7 +65,7 @@ function Login() {
             </div>
 
             <div>
-              <Link to="/">Forget Password</Link>
+              <Link to="/password-recovary">Forget Password</Link>
             </div>
           </div>
 
