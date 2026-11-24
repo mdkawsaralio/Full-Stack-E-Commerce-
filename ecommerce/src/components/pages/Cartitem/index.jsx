@@ -12,7 +12,7 @@ function CartPage() {
           <Link to="/product-listing">Fashion</Link>
         </Breadcrumbs>
       </div>
-      <div className="cart-section">
+      <div className="cart-section  overflow-x-hidden overflow-y-scroll">
         <CartItems />
       </div>
     </>

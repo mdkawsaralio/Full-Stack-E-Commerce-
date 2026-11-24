@@ -24,10 +24,12 @@ import ResetPassword from "./components/RecoverPassword/RecoverPassword";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Checkout from "./components/pages/CheckOut";
+import Profile from "./components/pages/MyProfile";
 
 const MyContext = createContext();
 
 function App() {
+  const [islogin, setislogin] = React.useState(true);
   const [OpenProductDetailsModal, setOpenProductDetailsModal] =
     React.useState(false);
   const [maxWidth, setMaxWidth] = React.useState("lg");
@@ -37,7 +39,12 @@ function App() {
     setOpenProductDetailsModal(false);
   };
 
-  const values = { OpenProductDetailsModal, setOpenProductDetailsModal };
+  const values = {
+    OpenProductDetailsModal,
+    setOpenProductDetailsModal,
+    islogin,
+    setislogin,
+  };
   return (
     <>
       <MyContext.Provider value={values}>
@@ -52,6 +59,7 @@ function App() {
           <Route path={"/password-recovary"} element={<ForgetPassword />} />
 
           <Route path={"/checkout"} element={<Checkout />} />
+
           <Route
             path={"/password-recovary/otp-verify"}
             element={<VerifyOTP />}
@@ -60,6 +68,8 @@ function App() {
             path={"/password-recovary/reset-password"}
             element={<ResetPassword />}
           />
+
+          <Route path={"/profile"} element={<Profile />} />
         </Routes>
         <Footer />
       </MyContext.Provider>
